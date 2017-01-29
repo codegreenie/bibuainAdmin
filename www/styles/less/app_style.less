@@ -1,0 +1,94 @@
+@import "global_variables.less";
+@import "global_mixins.less";
+
+a{
+    text-decoration: none !important;
+    //color: @maincolor !important;
+    border: none !important;;
+    &:visited{
+        text-decoration: none !important;
+        //color: @maincolor !important;
+        border:none !important;
+    }
+}
+#index-page{
+    background-image: url(../../img/stock-iphone.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+#half-design{
+    background-image: url(../../img/stock-iphone.jpg);
+    background-repeat: no-repeat;
+    min-height: 310px;
+    background-position: top right;
+    background-size: cover;
+}
+.border-radius{
+    border-radius: 12px !important;
+}
+.text-center{
+    text-align: center !important
+}
+.text-justify{
+    text-align:justify !important;
+}
+.text-main-color{
+        color : @maincolor !important
+}
+.text-mini-color{
+        color : @minicolor !important
+}
+.text-mr-white{
+        color : @mrwhite !important
+}
+.bg-main-color{
+    background-color: @maincolor !important
+}
+.bg-mini-color{
+    background-color: @minicolor !important
+}
+.bg-mr-white{
+    background-color: @mrwhite !important
+}
+.no-box-shadow{
+    &:focus{
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -blink-box-shadow: none !important;
+    box-shadow: none !important;
+    }
+}
+.ui-icon-myicon:after{
+    background-image: url("../../docs/imgs/phone.png");
+    background-size: 100px 100px;
+}
+::-webkit-input-placeholder {
+   color: #ffffff !important;
+}
+:-webkit-input-placeholder {
+   color: #ffffff !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color:  #ffffff !important;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color:  #ffffff !important;  
+}
+
+:-ms-input-placeholder {  
+   color:  #ffffff !important;  
+}
+:-input-placeholder {
+   color:  #ffffff !important;
+}
+
+.menu-reveal-panel{
+    background-color: @maincolor !important;
+}
+.no-background-color{
+    background-color: transparent !important;
+}

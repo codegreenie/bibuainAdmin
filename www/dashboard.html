@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="description" content="Bibuan Data Application." />
+<title>Dashboard</title>
+
+</head>
+
+<body>
+    
+    
+    
+    <div data-role="page" data-title="Dashboard"><!--Dashboard-->
+        
+     <header> <!--Heading Section-->
+            <div data-role="header" data-position="fixed">
+                 
+                    <h1>Dashboard</h1>
+            </div>
+    </header><!--Heading Section-->
+    <br>
+    <div data-role="content">
+        
+     <ul data-role="listview" data-inset="true">
+        
+         <li onclick="navigate('twist_network.html')">Network Status</li>
+         <li onclick="navigate('requests.html')">Data Requests</li>
+         <li onclick="navigate('prices.html')">Manage Prices</li>
+    </ul>
+                
+       
+        </div>   
+       
+        
+        <div data-role="footer" data-position="fixed" class="bg-mr-white text-main-color">
+    
+       
+       <h4 id="logout-key">Logout</h4>
+       
+    </div>            
+ 
+    
+        
+    </div><!--Dashboard-->
+    
+    
+    
+    </body>
+    
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="description" content="Bibuan Data Application." />
+<title>Bibuain Admin</title>
+    
+  <link rel="stylesheet" type="text/css" href="styles/css/bibuain.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/app_style.css" /> 
+
+ 
+<script type="text/javascript" charset="utf-8" src="scripts/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/config-script.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/plug_script.js"></script>
+
+</head>
+
+<body>
+    
+    
+    
+    <div data-role="page" data-title="Bibuain Admin" class="bg-main-color"><!--Admin PIN-->
+        
+    
+        
+        <div data-role="content" class="text-center">
+            
+            
+             <div data-role="popup" class="ui-content" id="verifying-admin" data-overlay-theme="a" data-dismissible="false" class="text-center"><!--Verifying OTP-->
+            
+            <h3>Verifying you</h3>
+            <img src="styles/css/images/ajax-loader.gif" style="display:block; margin: 0 auto;" />
+    </div>
+                
+       
+                
+         
+<a href="#verifying-admin" data-rel="popup" data-position-to="window" data-transition="pop" id="clik_2_verify_admin">
+                  &nbsp;
+</a>   
+          
+           <br><br><br> <br><br><br>
+            <h4 class="text-mr-white" style="color:#fff;">Enter PIN</h4>
+           
+                  
+                
+                
+                <input type="password" autofocus maxlength="4" required id="admin-pin" autocomplete="off">
+                
+                    
+                <button type="button" class="bg-mini-color" id="verify-admin-login">Login</button>    
+                
+       
+        </div>   
+       
+        
+    </div><!--Admin PIN-->
+    
+    
+    
+    </body>
+    
+</html>
