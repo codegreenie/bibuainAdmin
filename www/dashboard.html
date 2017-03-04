@@ -6,6 +6,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta property="description" content="Bibuan Data Application." />
 <title>Dashboard</title>
+<link rel="stylesheet" type="text/css" href="styles/css/bibuain.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/app_style.css" /> 
+
+ 
+<script type="text/javascript" charset="utf-8" src="scripts/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/config-script.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/plug_script.js"></script>
+
+
 
 </head>
 
@@ -13,8 +25,8 @@
     
     
     
-    <div data-role="page" data-title="Dashboard"><!--Dashboard-->
-        
+    <div data-role="page" data-title="Dashboard" id="the-dashboard"><!--Dashboard-->
+   
      <header> <!--Heading Section-->
             <div data-role="header" data-position="fixed">
                  
@@ -26,9 +38,9 @@
         
      <ul data-role="listview" data-inset="true">
         
-         <li onclick="navigate('twist_network.html')">Network Status</li>
-         <li onclick="navigate('requests.html')">Data Requests</li>
-         <li onclick="navigate('prices.html')">Manage Prices</li>
+         <li id="go-to-network">Network Status</li>
+         <li id="go-to-requests">Data Requests</li>
+         <li id="go-to-prices">Manage Prices</li>
     </ul>
                 
        

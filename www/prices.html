@@ -6,18 +6,30 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta property="description" content="Bibuan Data Application." />
 <title>Prices</title>
+
+ <link rel="stylesheet" type="text/css" href="styles/css/bibuain.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/app_style.css" /> 
+
+ 
+<script type="text/javascript" charset="utf-8" src="scripts/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/config-script.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/plug_script.js"></script>
+
 </head>
 
 <body>
     
     
     
-    <div data-role="page" data-title="Prices"><!--Twist Prices-->
+    <div data-role="page" data-title="Prices" id="prices-page"><!--Twist Prices-->
         
      <header> <!--Heading Section-->
             <div data-role="header" data-position="fixed">
                  <a href="#" data-rel="back" class="ui-btn ui-icon-carat-l ui-btn-icon-left ui-btn-icon-notext">Back</a>
-                    <h1>Network Status</h1>
+                    <h1>Data Prices</h1>
             </div>
     </header><!--Heading Section-->
     <br>
@@ -25,29 +37,26 @@
         
     <div data-role="content">
          
-             <div data-role="popup" class="ui-content" id="twisting-prices" data-overlay-theme="a" data-dismissible="false" class="text-center"><!--Twisting Prices-->
-            
-            <h3>Saving...</h3>
-            <img src="styles/css/images/ajax-loader.gif" style="display:block; margin: 0 auto;" />
-    </div><!--Twisting Prices-->
+             <div data-role="popup" class="ui-content text-center" id="twisting-prices" data-overlay-theme="a" data-dismissible="false"><!--Twisting Prices-->
+				&nbsp;
+			</div><!--Twisting Prices-->
                 
        
                 
          
-<a href="#twisting-prices" data-rel="popup" data-position-to="window" data-transition="pop" id="clik_2_twist_prices">
+<a href="#twisting-prices" data-rel="popup" data-position-to="window" data-transition="pop" id="click_2_twist_prices">
                   &nbsp;
 </a>   
         
+      
         
-        <h2 class="text-center">Update Prices</h2>
-        <br>
         
-        <div id="fall"></div>
         
         <form action="" method="post" onsubmit="return false" id="update_prices_form">
-        
-            
-            
+			<div class="text-center">
+            <img src='styles/css/images/ajax-loader.gif' style='display:block; margin: 0 auto;' />
+			<h3>Fetching Prices...</h3>
+            </div>
         <!--<button type="submit" class="bg-mini-color" id="save-network-status">Save</button>-->
         </form>
         
@@ -61,7 +70,7 @@
         <div data-role="footer" data-position="fixed" class="bg-mr-white text-main-color">
     
        
-       <h4 id="home-key">Dashboard</h4>
+       <h4 class="home-key">Dashboard</h4>
        
     </div>            
  

@@ -6,6 +6,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta property="description" content="Bibuan Data Application." />
 <title>Network Status</title>
+ <link rel="stylesheet" type="text/css" href="styles/css/bibuain.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/app_style.css" /> 
+
+ 
+<script type="text/javascript" charset="utf-8" src="scripts/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/config-script.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/plug_script.js"></script>
 
 </head>
 
@@ -13,7 +23,7 @@
     
     
     
-    <div data-role="page" data-title="Network Status"><!--Twist Network-->
+    <div data-role="page" data-title="Network Status" id="network-places"><!--Twist Network-->
         
      <header> <!--Heading Section-->
             <div data-role="header" data-position="fixed">
@@ -26,16 +36,14 @@
         
     <div data-role="content">
          
-             <div data-role="popup" class="ui-content" id="twisting-network" data-overlay-theme="a" data-dismissible="false" class="text-center"><!--Twisting Network-->
-            
-            <h3>Saving...</h3>
-            <img src="styles/css/images/ajax-loader.gif" style="display:block; margin: 0 auto;" />
-    </div><!--Twisting Network-->
+             <div data-role="popup" class="ui-content text-center" id="twisting-network" data-overlay-theme="a" data-dismissible="false"><!--Twisting Network-->
+				&nbsp;
+			</div><!--Twisting Network-->
                 
        
                 
          
-<a href="#twisting-network" data-rel="popup" data-position-to="window" data-transition="pop" id="clik_2_twist_network">
+<a href="#twisting-network" data-rel="popup" data-position-to="window" data-transition="pop" id="click_2_twist_network">
                   &nbsp;
 </a>   
         
@@ -56,7 +64,7 @@
         <div data-role="footer" data-position="fixed" class="bg-mr-white text-main-color">
     
        
-       <h4 id="home-key">Dashboard</h4>
+       <h4 class="home-key">Dashboard</h4>
        
     </div>            
  

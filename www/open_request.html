@@ -7,13 +7,25 @@
 <meta property="description" content="Bibuan Data Application." />
 <title>Request | Open Sensame</title>
 
+ <link rel="stylesheet" type="text/css" href="styles/css/bibuain.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/app_style.css" /> 
+
+ 
+<script type="text/javascript" charset="utf-8" src="scripts/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/config-script.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="scripts/plug_script.js"></script>
+
+
 </head>
 
 <body>
     
     
     
-    <div data-role="page" data-title="Request | Open Sensame"><!--Open Request-->
+    <div data-role="page" data-title="Request | Open Sensame" id="this-request"><!--Open Request-->
         
      <header> <!--Heading Section-->
             <div data-role="header" data-position="fixed">
@@ -25,6 +37,20 @@
         
         
     <div data-role="content" class="text-center">
+	
+		 <div data-role="popup" class="ui-content text-center" id="saving_as_done" data-overlay-theme="a" data-dismissible="false"><!--Saving Requests-->
+				&nbsp;
+			</div><!--Saving Requests-->
+                
+       
+                
+         
+<a href="#saving_as_done" data-rel="popup" data-position-to="window" data-transition="pop" id="click_2_done">
+                  &nbsp;
+</a>   
+	
+	
+	
         
         <div id="this_request_container">
         
@@ -42,7 +68,7 @@
         <div data-role="footer" data-position="fixed" class="bg-mr-white text-main-color">
     
        
-       <h4 id="home-key">Dashboard</h4>
+       <h4 class="home-key">Dashboard</h4>
        
     </div>            
  
