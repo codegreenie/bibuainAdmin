@@ -18,6 +18,7 @@ function onBackKeyDown(){
 	var backbutton = 0;
 	
 	if(backbutton == 0){
+		backbutton++;
 		window.plugins.toast.showShortBottom('Press again to exit');
 		window.setTimeout(
 			function(){
