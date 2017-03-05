@@ -8,12 +8,27 @@ function onLoad(){
 
 function onDeviceReady(){
 	
-	$("#logout-key").on("click", function(){
-		
-		navigator.app.exitApp();
-		
-	});
+	document.addEventListener("backbutton", onBackKeyDown, false);
 	
 }
 
+
+function onBackKeyDown(){
+	
+	var backbutton = 0;
+	
+	if(backbutton == 0){
+		window.plugins.toast.showShortBottom('Press again to exit');
+		window.setTimeout(
+			function(){
+				backbutton = 0;
+			},
+			5000);
+	}
+	
+	else{
+		
+		navigator.app.exitApp();
+	}
+}
 
